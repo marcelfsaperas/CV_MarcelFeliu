@@ -1,7 +1,12 @@
+html{
+    background-color: blanchedalmond;
+    
+}
 header{
-    background-color: red;
+    background-color: white;
     width: auto;
     position: sticky;
+    height: 60px;
 }
 .flex-container{
     display: flex;
@@ -9,16 +14,20 @@ header{
     margin-top: 20px;
 
 }
-.prifle-card, .about-me{
+
+.prifle-card{
     display: flex;
     justify-content: center;
     width: 20%;
     height: 300px;
     margin-left: 10px;
-}
-.prifle-card{
     background-color: blue;
 }
 .about-me{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 300px;
+    margin-left: 10px;
     background-color: blueviolet;
 }
