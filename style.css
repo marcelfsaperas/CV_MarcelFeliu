@@ -1,20 +1,24 @@
 header{
     background-color: red;
     width: auto;
-    
+    position: sticky;
 }
 .flex-container{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
+}
+.prifle-card, .about-me{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 300px;
+    margin-left: 10px;
 }
 .prifle-card{
     background-color: blue;
-    width: 100%;
-    margin-left: 10px;
 }
 .about-me{
     background-color: blueviolet;
-    width: 100%;
-    margin-right: 10px;
 }
