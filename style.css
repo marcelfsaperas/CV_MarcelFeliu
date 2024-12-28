@@ -1,46 +1,54 @@
-html{
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+/* Hacemos que el body sea un flex */
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
     background-color: rgb(197, 131, 30);
-    
-}
-header{
-    background-color: rgb(205, 89, 89);
-    width: auto;
-    position: sticky;
-    height: 150px;
-    border: 2px solid black;
-
-}
-.flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
-.profile-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 300px;
-    margin-left: 10px;
-    border: 2px solid black; 
-
-}
-.about-me{
-    
-    width: 30%;
-    height: 300px;
-    margin-left: 10px;
-    border: 2px solid black;
-    
-}
-footer{
+header {
     background-color: rgb(205, 89, 89);
     width: auto;
     height: 150px;
     border: 2px solid black;
+}
 
+/* Creamos otro flex para las dos cartas del medio */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 450px;
+    margin-left: 10px;
+    border: 2px solid black;
+}
+.about-me {
+    width: 30%;
+    height: 450px;
+    margin-left: 10px;
+    border: 2px solid black;
+}
+
+
+footer {
+    height: 150px;
+    background-color: rgb(205, 89, 89);
+    border: 2px solid black;
+    width: 100%;
 }
