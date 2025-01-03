@@ -1,30 +1,50 @@
-:root{
+:root {
     --white: whitesmoke;
     --background: rgb(233, 218, 203);
 }
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
+
 /* Hacemos que el body sea un flex */
 body {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--white)
-
-
-    
 }
 
 header {
     width: auto;
     height: 150px;
     background-color: var(--white);
+}
+
+ul {
+    background-color: aqua;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    width: auto;
+    gap: 20px;
+    padding: 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Creamos otro flex para las dos cartas del medio */
@@ -35,27 +55,30 @@ header {
     align-content: center;
     align-items: center;
     justify-items: center;
-    
+
 
 
 }
+
 .profile-card {
     width: 400px;
     height: 450px;
-    background-color:rgb(230, 218, 206);
+    background-color: rgb(230, 218, 206);
     box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
-    
 
-    
+
+
 }
+
 .about-me {
     width: 500px;
     height: 450px;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); */
 
-    
+
 }
-.social-links{
+
+.social-links {
     width: 100%;
     height: 40px;
     grid-row: 2;
@@ -68,9 +91,10 @@ header {
     align-items: center;
     gap: 30px;
 
-    
+
 }
-.buttons{
+
+.buttons {
     width: 100%;
     height: 40px;
     grid-row: 2;
@@ -81,7 +105,7 @@ header {
     display: flex;
     align-items: center;
     gap: 30px;
-    
+
 }
 
 footer {
@@ -89,4 +113,9 @@ footer {
     width: 100%;
     background-color: var(--white);
 
+}
+
+footer,
+header {
+    background-color: red;
 }
