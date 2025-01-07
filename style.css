@@ -13,6 +13,22 @@ body {
     margin: 0;
 }
 
+/* Fondo detrás de la tarjeta */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: var(--background);
+    z-index: -1;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
 /* Hacemos que el body sea un flex */
 body {
     display: flex;
@@ -28,7 +44,7 @@ header {
 }
 
 ul {
-    background-color: aqua;
+
     display: flex;
     justify-content: end;
     margin-left: auto;
@@ -117,5 +133,5 @@ footer {
 
 footer,
 header {
-    background-color: red;
+    
 }
