@@ -29,7 +29,7 @@ main {
     z-index: 1;
 }
 
-/* Hacemos que el body sea un flex */
+
 body {
     display: flex;
     flex-direction: column;
@@ -76,14 +76,18 @@ a:hover {
 
 }
 
+/* --------------------------- 
+        PROFILE CARD 
+------------------------------*/
 .profile-card {
+    display: flex;
     width: 400px;
     height: 450px;
     background-color: rgb(230, 218, 206);
     box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
-
-
-
+    justify-content: center;
+    justify-items: center;
+    
 }
 
 .about-me {
@@ -131,7 +135,3 @@ footer {
 
 }
 
-footer,
-header {
-    
-}
