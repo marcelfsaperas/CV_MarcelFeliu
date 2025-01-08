@@ -97,9 +97,9 @@ a:hover {
 
 
 }
-.pfp{
+.profile-photo{
     width: 100px;
-    border-radius: 30px;
+    border-radius: 100%;
 }
 .social-links {
     width: 100%;
