@@ -97,7 +97,10 @@ a:hover {
 
 
 }
-
+.pfp{
+    width: 100px;
+    border-radius: 30px;
+}
 .social-links {
     width: 100%;
     height: 40px;
