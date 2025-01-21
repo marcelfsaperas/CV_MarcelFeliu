@@ -106,8 +106,10 @@ a:hover {
     margin-bottom: 15px; /* Espaciado entre la foto y el texto */
 }
 .profile-photo img{
-    width: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
+    object-fit: cover; /*ajustar la imagen al contenedor sin deformarla */
 }
 
 .profile-card h1{
