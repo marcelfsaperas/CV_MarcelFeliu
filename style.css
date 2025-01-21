@@ -41,6 +41,10 @@ header {
     width: auto;
     height: 150px;
     background-color: var(--white);
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 20px; 
 }
 
 ul {
