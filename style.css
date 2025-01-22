@@ -97,7 +97,7 @@ a:hover {
 }
 
 .about-me {
-    width: 500px;
+    width: 450px;
     height: 450px;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); */
 
@@ -122,15 +122,26 @@ a:hover {
 .profile-card p{
     text-align: center;
 }
-.description, .about-me-title{
-    margin: 5%;
+.description, .about-me-title, .what-i-do{
+    
     width: 100%; /* Ocupar todo el ancho del recuadro */
     height: 15%; /* Ajusta dinámicamente según el contenido */
     padding: 20px; /* Espaciado interno uniforme */
     margin: 0; /* Elimina márgenes adicionales */
-    line-height: 1.8; /* Aumenta el espacio entre líneas */
     text-align: justify; /* Alineación justificada */
 }
+.description{
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+
+}
+.about-me-title{
+    font-size: 3rem;
+    
+}
+.what-i-do{
+
+}
+
 
 .social-links {
     width: 100%;
