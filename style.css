@@ -151,6 +151,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 30px;
+    padding: 20px;
 
 }
 
@@ -161,3 +162,32 @@ footer {
 
 }
 
+@import url('https://fonts.googleapis.com/css2?Roboto&display=swap');
+
+.project {
+    cursor: pointer;
+    border: solid rgba(0, 4, 255, 0);
+    font-family: "system-ui";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    transition: 2s;
+    
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 25px;
+    background: rgb(0, 102, 204);
+    --hover-width: 192px;
+    --hover-borderSize: 2;
+    --hover-bgc: #ffffff;
+    --hover-color: #0066cc;
+    --hover-borderc: #0066cc;
+    }
+    
+.btn:hover{
+    color: rgb(0, 102, 204);
+    
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(0, 102, 204);
+    border-width: 3px;
+    border-style: solid;
+}
