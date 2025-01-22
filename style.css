@@ -124,6 +124,12 @@ a:hover {
 }
 .description, .about-me-title{
     margin: 5%;
+    width: 100%; /* Ocupar todo el ancho del recuadro */
+    height: 15%; /* Ajusta dinámicamente según el contenido */
+    padding: 20px; /* Espaciado interno uniforme */
+    margin: 0; /* Elimina márgenes adicionales */
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+    text-align: justify; /* Alineación justificada */
 }
 
 .social-links {
