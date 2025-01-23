@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 0;
 }
+.blue-highligth{
+    color: blue;
+    text-decoration: underline;
+}
 
 .project-title{
     
