@@ -5,6 +5,8 @@ body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
+    background-color:  rgb(233, 218, 203);
+
 }
 
 
@@ -53,7 +55,6 @@ body {
 @media (min-width: 1024px) {
     .project-image {
         object-position: 50% 62%;
-        background-image: url('/img/akxolotl2.webp');
 
     }
 }
@@ -68,7 +69,9 @@ body {
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     .project-image {
-        object-position: 50% 50%; 
+        object-position: 50% 50%;
+        background-image: url('/img/akxolotl2.webp');
+
     }
     .grid-projects {
         grid-template-columns: 1fr; /* 1 columna por fila en pantallas pequeñas */
