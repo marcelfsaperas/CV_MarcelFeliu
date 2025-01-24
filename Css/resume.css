@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem 18% 2rem;
+    position: relative;
 }
 .timeline-row{
     display: grid;
@@ -80,4 +81,10 @@ body {
     border-radius: 50%;
     left: -50px;
     top: 40px
+}
+footer{
+    margin-top: 10%; /* Espaciado respecto al timeline-wrapper */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 5rem;
 }
