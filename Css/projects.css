@@ -8,74 +8,142 @@ body {
     background-color:  rgb(233, 218, 203);
 
 }
-
-
-.project-title{
+.project-title{   
     
     text-align: center;
     font-size: 2rem;
-    margin: 20px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .grid-projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    padding: 20px;
-    width: 70%; 
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 10px; 
+    padding: 10px;
+    width: 80%; 
     margin: 0 auto;
+    justify-items: center; 
     
 }
 
 .grid-projects > .project {
     background-color: var(--white);
     display: flex;
-    flex-direction: column; /* Coloca la imagen encima del texto */
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Alinea el contenido en la parte superior */
+    justify-content: flex-start;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0; /* Elimina el padding del contenedor */
-    height: 300px; /* Altura fija del contenedor */
-    position: relative; /* Para colocar elementos sobre la imagen */
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 350px; 
 }
 
+.project {
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagen del proyecto */
 .project-image {
     width: 100%;
-    height: 100%; /* Ajusta la altura según necesites */
+    height: 100%;
+    transition: filter 0.3s ease-in-out; 
     background-image: url('/img/akxolotl.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
 }
 
+/* Contenedor general de título y herramientas */
+.project-info-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    /* background: rgba(0, 0, 0, 0.6); */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Título del juego */
+.project-title-overlay {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Herramientas utilizadas */
+.project-aptitudes {
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Efecto hover */
+.project:hover .project-image {
+    filter: brightness(20%); 
+    border: 2px solid #000000;
+}
+
+.project:hover .project-info-overlay {
+    opacity: 1;
+}
+
+
+
 /* Media query para pantallas grandes */
 @media (min-width: 1024px) {
     .project-image {
-        object-position: 50% 62%;
+        object-position: 50% 62%; 
 
     }
 }
 
 /* Media query para pantallas medianas */
 @media (max-width: 1024px) and (min-width: 768px) {
+    .grid-projects > .project {
+        height: 220px; /* Reducir aún más en pantallas medianas */
+    }
+
     .project-image {
-        object-position: 50% 55%; 
+        object-position: 50% 55%;
+        height: 75%; /* Ajustar la altura de la imagen */
     }
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
+    .grid-projects {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .grid-projects > .project {
+        height: 200px; /* Tamaño más reducido para móviles */
+    }
+
     .project-image {
         object-position: 50% 50%;
+        
         background-image: url('/img/akxolotl2.webp');
-
-    }
-    .grid-projects {
-        grid-template-columns: 1fr; /* 1 columna por fila en pantallas pequeñas */
-        width: 90%; /* Ajusta el ancho para que quede bien en pantallas más pequeñas */
+        height: 100%;
     }
 }
+
+
+
+
 
