@@ -26,13 +26,13 @@ body {
 .header-name{
     font-family: "Smooch Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 300; /* Ligero */
+    font-weight: 300; 
     font-style: normal;
 }
 .smooch-sans-bold {
     font-family: "Smooch Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 700; /* Negrita */
+    font-weight: 700; 
     font-style: normal;
 }
 
@@ -111,7 +111,7 @@ a {
 }
 
 
-/* Creamos otro flex para las dos cartas del medio */
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -151,7 +151,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px; /* Espaciado entre la foto y el texto */
+    margin-bottom: 15px; /* Espaciado entre la foto y el texto deaabajo */
 }
 .profile-photo img{
     width: 200px;
@@ -186,7 +186,7 @@ a {
     font-size: 3rem;
     font-family: "Smooch Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 600; /* Ligero */
+    font-weight: 600; 
     font-style: normal;
     
 }
@@ -207,11 +207,11 @@ a {
 }
 .icons{
     display: flex;
-    justify-content: center; /* O usa space-around si prefieres más espacio */
+    justify-content: center; 
     align-items: center;
     width: 100%;
     gap: 30px;
-    padding: 0px; /* Añade padding para evitar que los iconos queden pegados a los bordes */   
+    
 }
 .icons i{
     font-size: 2.3rem;
@@ -241,7 +241,7 @@ footer {
 }
 
 
-/* Estilos del botón */
+/* Estil de los botones */
 .btn, .resume {
     cursor: pointer;
     border: solid 2px transparent;
@@ -270,7 +270,7 @@ footer {
     transition: background-color 1s ease;
 }
 
-/* Estilo para el botón "Resume" */
+
 .resume {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0); 
@@ -318,7 +318,7 @@ footer {
     }
 
     .profile-card {
-        width: 80%;  /* Hacer la carta un poco más pequeña en pantallas pequeñas */
+        width: 80%;  
         margin-top: 10px;
     }
 
@@ -338,9 +338,9 @@ footer {
     }
 
     .buttons {
-        width: 80%;  /* Ajustamos el tamaño de los botones */
+        width: 80%;  /* AJusta el tamaño de los botones */
         display: flex;
-        flex-direction: row;  /* Los botones se apilan uno debajo de otro */
+        flex-direction: row;  
         gap: 10px;
     }
 
@@ -372,6 +372,6 @@ footer {
     }
 
     .icons i {
-        font-size: 1.8rem;  /* Reducimos el tamaño de los iconos sociales */
+        font-size: 1.8rem;  /* Reducimos el tamanyo de los iconos */
     }
 }

@@ -126,8 +126,8 @@ body {
     border-radius: 0.5rem;
     transition: 0.1s ease;
     word-wrap: break-word;
-    height: auto; /* Asegura que la caja crezca en altura según el contenido */
-    min-height: 100px; /* Opcional: para asegurar un tamaño mínimo visible */
+    height: auto;
+    min-height: 100px; 
 }
 
 .content-box:hover {
@@ -164,8 +164,8 @@ body {
 }
 
 footer{
-    margin-top: 10%; /* Espaciado respecto al timeline-wrapper */
-    color: white; /* Color del texto */
+    margin-top: 10%; 
+    color: white; 
     text-align: center;
     padding: 5rem;
 }
@@ -173,18 +173,18 @@ footer{
 /* Ajustes para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
     .heading {
-        font-size: 2rem; /* Reducir el tamaño de los títulos */
+        font-size: 2rem;
     }
 
     .content-box h3 {
-        font-size: 1.1rem; /* Reducir tamaño del texto en las cajas */
+        font-size: 1.1rem; 
     }
 
     .skills-wrapper {
-        padding: 2rem 10%; /* Ajustar los márgenes en pantallas pequeñas */
+        padding: 2rem 10%; 
     }
 
     .skills-row {
-        gap: 1rem; /* Reducir el espacio entre las columnas */
+        gap: 1rem; 
     }
 }
