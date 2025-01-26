@@ -9,13 +9,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: white; /* Asegura que el header tenga fondo */
-    z-index: 1000; /* Para que esté por encima del contenido */
+    background: white; 
+    z-index: 1000; 
     padding: 1rem;
 }
 
 body {
-    padding-top: 80px; /* Ajusta este valor si es necesario */
+    padding-top: 80px; 
 }
 
 .timeline-wrapper{
@@ -95,9 +95,9 @@ body {
 
 .skills-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Esto es lo que hace el diseño responsivo */
-    gap: 2rem; /* Espacio entre las columnas */
-    max-width: 1200px; /* Esto limita el ancho máximo de las columnas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem; 
+
     width: 100%;
 }
 
