@@ -245,42 +245,123 @@ footer {
 
 
 /* Estilos del botón */
-.btn {
+.btn, .resume {
     cursor: pointer;
-    border: solid rgba(0, 4, 255, 0);
+    border: solid 2px transparent;
     font-family: "system-ui";
     font-size: 14px;
     color: rgb(255, 255, 255);
-
+    
     min-width: 170px; 
     max-width: 250px; 
-    width: auto;
     
     padding: 5px 20px;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
     border-radius: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background: rgb(0, 102, 204);
-
-
+    
 }
 
-.btn:hover {
-    background: rgb(255, 255, 255); 
-    color: rgb(0, 102, 204); 
-    border: 2px solid rgb(0, 102, 204);
-    transition: background-color 1s ease;
-
-}
-
-/* Estilo específico para el botón "Resume" */
+/* Estilo para el botón "Resume" */
 .resume {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0); 
-    border: 1px solid black;
+    border: 2px solid black;
     transition: background-color 1s ease;
 }
 
 .resume:hover {
     background: rgb(0, 102, 204);
     color: rgb(255, 255, 255);
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-name {
+        text-align: center; /* Centra el nombre */
+    }
+
+    ul {
+        justify-content: center; /* Centra los botones */
+        width: 100%;
+        padding: 0;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;  /* Cambiar a una disposición en columna */
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .description{
+        width: calc(100% - 15px);
+        text-align: left;
+        
+    }
+
+    .profile-card {
+        width: 80%;  /* Hacer la carta un poco más pequeña en pantallas pequeñas */
+        margin-top: 10px;
+    }
+
+    .social-links {
+        width: 80%;
+        box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.2);
+
+    }
+
+    
+    .about-me {
+        width: 80%;
+        height: auto; /* Ajusta la altura según el contenido */
+        background-color: rgb(230, 218, 206);
+        box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px; 
+    }
+
+    .buttons {
+        width: 80%;  /* Ajustamos el tamaño de los botones */
+        display: flex;
+        flex-direction: row;  /* Los botones se apilan uno debajo de otro */
+        gap: 10px;
+    }
+
+    .btn {
+        
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+    
+        min-width: auto; 
+        max-width: auto; 
+        width: auto;
+        
+        padding: 5px 20px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 25px;
+        background: rgb(0, 102, 204);
+    }
+
+    .profile-photo img {
+        width: 150px;  /* Reducimos el tamaño de la foto en pantallas pequeñas */
+        height: 150px;
+    }
+
+    .icons i {
+        font-size: 1.8rem;  /* Reducimos el tamaño de los iconos sociales */
+    }
 }
