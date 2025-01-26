@@ -110,9 +110,6 @@ a {
     color: #000000;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 /* Creamos otro flex para las dos cartas del medio */
 .grid-container {
@@ -266,6 +263,12 @@ footer {
     background: rgb(0, 102, 204);
     
 }
+.btn:hover {
+    background: rgb(255, 255, 255); 
+    color: rgb(0, 102, 204); 
+    border: 2px solid rgb(0, 102, 204);
+    transition: background-color 1s ease;
+}
 
 /* Estilo para el botón "Resume" */
 .resume {
@@ -354,6 +357,13 @@ footer {
         box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
         border-radius: 25px;
         background: rgb(0, 102, 204);
+    }
+
+    .resume {
+        background: rgb(255, 255, 255); 
+        color: rgb(0, 102, 204); 
+        border: 2px solid rgb(0, 102, 204);
+        transition: background-color 1s ease;
     }
 
     .profile-photo img {
