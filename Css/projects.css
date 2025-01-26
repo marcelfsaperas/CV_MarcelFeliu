@@ -128,11 +128,7 @@ body {
         height: 100%; 
     }
 
-    .header-name {
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-    }
+    
 }
 
 
